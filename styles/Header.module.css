@@ -1,0 +1,43 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: blue;
+  margin: 20px 20px;
+  /* background-color: rgb(68, 87, 87); */
+  /* flex: 1; */
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.para {
+  width: 30%;
+  margin: 30px 30px;
+  font-size: 13px;
+}
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 20px;
+  float: left;
+}
+
+/* .Logo {
+  background-image: ;
+} */
+.form {
+  display: flex;
+  margin: 0 20px;
+  width: 30%;
+}
