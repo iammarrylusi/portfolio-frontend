@@ -20,17 +20,18 @@
   gap: 20px;
   list-style: none;
 }
-.para {
-  width: 30%;
-  margin: 30px 30px;
-  font-size: 13px;
-}
+
 .banner {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 20px 20px;
   float: left;
+}
+.para {
+  width: 30%;
+  margin: 30px 30px;
+  font-size: 13px;
 }
 
 /* .Logo {
