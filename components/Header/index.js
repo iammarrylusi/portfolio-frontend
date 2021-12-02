@@ -4,9 +4,19 @@ import Image from "next/image";
 import styles from "../../styles/Header.module.css";
 import { Component } from "react";
 
+// width: 100vw;
+//   position: fixed;
+//   top: 0;
+//   background: white;
+//   display: flex;
+//   z-index: 500000;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+
 const Header = () => (
-  <div className="flex flex-col h-screen bg-gray-900">
-    <div className="flex justify-between bg-yellow-300 items-center text-white m-8 bg-transparent">
+  <div className="flex flex-col h-screen  ">
+    <div className="flex justify-between  items-center text-white m-5 bg-green-800 h-16">
       <Image
         src="/logo.png"
         alt=""
@@ -25,26 +35,34 @@ const Header = () => (
       </ul>
     </div>
 
-    <div className="flex  justify-center bg-yellow-300  ">
-      <div className="flex  bg-yellow-300  w-2/3 ">
-        <div>
-          <span className="text-white text-sm">Welcome to my world</span>
-          <h1 className="text-white font-semibold text-3xl">
+    {/* calci-{h-screen-h-16} */}
+
+    <div className="flex  justify-center mt-6 bg-red-300	pb-20">
+      <div className="flex   item-center w-4/5">
+        <div className=" flex-grow mt-10">
+          <span className="text-white text-sm tracking-widest uppercase">
+            Welcome to my world
+          </span>
+          <h1 className="text-white font-semibold text-3xl w-4/5 mb-5 mt-8">
             Hi, I’m Jone Lee a Developer.Professional Coder.Developer.{" "}
           </h1>
-          <p className=" text-white">
+          <p className=" text-white w-4/5 mb-5 mt-8 leading-7 ">
             I use animation as a third dimension by which to simplify
             experiences and kuiding thro each and every interaction. I’m not
             adding motion just to spruce things up, but doing it in ways that.
           </p>
-
-          <p>FIND WITH ME</p>
-          <p>BEST SKILL ON </p>
+          <div className="flex justify-between w-1/2  text-white mt-8">
+            <p>FIND WITH ME</p>
+            <p>BEST SKILL ON </p>
+          </div>
         </div>
 
-        <Image src="/banner-01.png" alt="" height={900} width={900} />
+        <div className=" flex-grow ">
+          <Image src="/banner-01.png" alt="" height={1300} width={1000} />
+        </div>
       </div>
     </div>
+    <div></div>
   </div>
 );
 
